@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            S.A.M.D
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body style = "background: rgb(0, 0, 0)">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <section class ="sub-header">
+            <nav>
+                <a href="index.html"><img src="Dav1.png"></a>
+                <div class ="nav-links" id ="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a> </li>
+                        <li><a href="about.html">ABOUT</a> </li>
+                        <!---<li><a href="course.html">COURSE</a> </li> --->
+                        <!---<li><a href="blog.html">BLOG</a> </li> --->
+                        <li><a href="contact.html">CONTACT</a> </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <h1>Contact Us</h1>
+        </section>
+
+
+
+<!---- contact us ------>
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.8855437717907!2d-121.75481238537587!3d38.53640647574802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085290fe8d3f929%3A0x9453202902f91cdd!2sJungerman%20Hall%2C%20430%20Bainer%20Hall%20Dr%2C%20Davis%2C%20CA%2095616!5e0!3m2!1sen!2sus!4v1648954808746!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <ion-icon name="home-outline" style="font-size: 30px;"></ion-icon>
+                <span>
+                    <h5> 430 Bainer Hall Dr</h5>
+                    <p>Davis, CA, 95616</p>
+                </span>
+            </div>
+            <div>
+                <ion-icon name="call-outline" style="font-size: 30px;"></ion-icon>
+                <span>
+                    <h5> +1 (530) 754-9610</h5>
+                    <p>Monday to Friday, 9AM to 5PM</p>
+                </span>
+            </div>
+            <div>
+                <ion-icon name="mail-outline" style="font-size: 30px;"></ion-icon>
+                <span>
+                    <h5> svoboda@physics.ucdavis.edu </h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="text" name="email"placeholder="Enter email address" required>
+                    <input type="text" name="subject"placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required> </textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+        </div>
+    </div>
+</section>
+
+<!----Footer-->
+<section class="footer">
+    <h4>
+        About Us
+    </h4>
+   
+    
+
+    <div class="icons">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </div>
+    <p> Made by <i class="fa fa-heart-o"></i>Chineme Uba and Eseosa Omorogroieva</p>
+</section>
+     <!-----Javascript for Toggle Menu ----->
+    <script>
+
+         var navLinks = document.getElementById("navLinks");
+
+         function showMenu(){
+             navLinks.style.right = "0";
+         }
+         function hideMenu(){
+             navLinks.style.right= "-200";
+         }
+    </script>
+    </body>
+</html>
+
